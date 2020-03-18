@@ -1,0 +1,37 @@
+{
+  "name": "ui_kit_APEX",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/IliaOv/ui_kit_APEX.git",
+  "author": "IliaOv <ilya.ovchinniko@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "prettier": "^1.19.1"
+  },
+  "scripts": {
+    "start": "index.html"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 4 chrome version",
+      "last 4 firefox version",
+      "last 4 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.2",
+    "babel-preset-minify": "^0.5.1",
+    "husky": "^3.1.0",
+    "markdown": "^0.5.0",
+    "pretty-quick": "^2.0.1",
+    "styled-components": "^4.4.1"
+  }
+}
