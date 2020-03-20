@@ -76,11 +76,13 @@ body {
   font-family: Montserrat, monospace;
 }
 main,
-header {
+header,
+footer {
   margin: 3% 3%;
   padding: 2%;
 }
-header {
+header,
+footer {
   background-color: #fff;
   border-radius: 15px;
   margin-bottom: 2%;
@@ -368,4 +370,40 @@ header {
 .enter__input::-webkit-input-placeholder {
   font-family: Montserrat, monospace;
   color: #96979f;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.block__col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 1%;
+}
+.color__txt {
+  margin-bottom: 5px;
+}
+.color {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  width: 100px;
+  height: 100px;
+}
+.color__primary {
+  background-color: #2a4a8b;
+  color: #fff;
+}
+.color__secondary {
+  background-color: #ecf7fa;
+  color: #000;
+}
+.color__background {
+  background-color: #f7f8fc;
+  color: #000;
 }
