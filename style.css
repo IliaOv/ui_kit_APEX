@@ -71,103 +71,303 @@
     /* Safari, Android, iOS */
       url("./fonts/montserrat-v14-cyrillic-700.svg#Montserrat") format("svg"); /* Legacy iOS */
 }
-
-html {
-  font-size: 16px;
+body {
+  background-color: #f7f8fc;
+  font-family: Montserrat;
 }
+main,
+header {
+  margin: 3% 3%;
+  padding: 2%;
+}
+header {
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 2%;
+}
+/* Выделить надпись ИБРАЭ РАН */
+.org {
+  color: #d23737;
+}
+/* Блок с 1 компонентом */
+.block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 2%;
+  padding: 3%;
+}
+/* Блок для 2 кнопкой (обычная и при наведении) */
+.block-hov {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100px;
+}
+.block-check {
+  min-height: 120px;
+}
+/* Стиль кода */
+pre {
+  font-size: 12px;
+  color: #394367;
+  min-width: 390px;
+}
+/* сделать прозрачным бар наверху */
+.t-Header-branding {
+  background-color: transparent;
+}
+/* Первый заголовок */
 .header_1 {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 32px;
   letter-spacing: 0.05em;
-  color: #1f2433;
+  color: #00213a;
 }
-.header_2 {
+/* Первый заголовок */
+.header_2,
+.t-Region-title {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 1.5rem;
-  letter-spacing: 0.05em;
-  color: #1f2433;
+  font-size: 24px;
+  color: #00213a;
 }
+/* Первый заголовок */
+.header_3,
+.t-Region-body {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  color: #00213a;
+}
+/* Основной текст */
 .text_carry {
   font-family: Montserrat;
   font-weight: 300;
-  font-size: 0.75rem;
+  font-size: 12px;
   color: #394367;
-  letter-spacing: 0.135em;
 }
+/* Вспомогательный текст */
 .text_support {
   font-family: Montserrat;
   font-weight: 300;
-  font-size: 0.75rem;
+  font-size: 12px;
   color: #96979f;
-  letter-spacing: 0.135em;
 }
-.button_1 {
-  width: 8.25rem;
-  height: 2.3125rem;
-  background: #ceebef;
-  border-radius: 0.375rem;
+/* Кнопка 1 тип */
+.button_1,
+.button_1-hov {
+  width: 135px;
+  height: 40px;
+  background-color: #ecf7fa !important;
+  border-radius: 6px !important;
   border: none;
+  box-shadow: none !important;
   font-family: Montserrat;
   font-weight: 500;
-  font-size: 0.75rem;
-  color: #2a4a8b;
+  font-size: 14px !important;
+  color: #2a4a8b !important;
   cursor: pointer;
+  padding: 0 !important;
 }
-.button_1:hover {
-  color: #d2e9ff;
-  background: #2a4a8b;
-  transition: 0.2s;
+/* Кнопка 1 тип, наведение */
+.button_1:hover,
+.button_1-hov {
+  color: #ecf7fa !important;
+  background: #2a4a8b !important;
+  transition: 0.2s !important;
 }
-
-.button_2 {
-  width: 8.25rem;
-  height: 2.3125rem;
+/* Кнопка 2 тип */
+.button_2,
+.button_2-hov {
+  width: 135px;
+  height: 40px;
   background: #ffffff;
-  border-radius: 0.375rem;
-  border: 0.05rem solid #2a4a8b;
+  border-radius: 6px;
+  border: 0.5px solid #2a4a8b;
   font-family: Montserrat;
   font-weight: 500;
-  font-size: 0.75rem;
+  font-size: 14px;
   color: #2a4a8b;
   cursor: pointer;
 }
-.button_2:hover {
-  color: #d2e9ff;
+/* Кнопка 2 тип, наведение */
+.button_2:hover,
+.button_2-hov {
+  color: #ecf7fa;
   background: #2a4a8b;
   transition: 0.2s;
 }
-
-.button_сancel {
-  width: 8.25rem;
-  height: 2.3125rem;
-  background: #d53636;
-  border-radius: 0.375rem;
+/* Кнопка 3 тип (нежелательно)*/
+.button_сancel,
+.button_сancel-hov {
+  width: 135px;
+  height: 40px;
+  background: #d23737;
+  border-radius: 6px;
   border: none;
   font-family: Montserrat;
   font-weight: 500;
-  font-size: 0.75rem;
+  font-size: 14px;
   color: #ffffff;
   cursor: pointer;
 }
-.button_сancel:hover {
+/* Кнопка 3 тип, наведение*/
+.button_сancel:hover,
+.button_сancel-hov {
   color: #ffffff;
   background: #ca0404;
   transition: 0.2s;
 }
-
+/* Кнопка 4 тип, неактивна*/
 .button_disable {
-  width: 8.25rem;
-  height: 2.3125rem;
+  width: 135px;
+  height: 40px;
   background: #e6f0f5;
-  border-radius: 0.375rem;
+  border-radius: 6px;
   border: none;
   font-family: Montserrat;
   font-weight: 500;
-  font-size: 0.75rem;
+  font-size: 14px;
   color: #96979f;
 }
+/* Кнопка 4 тип, неактивна, наведение*/
 .button_disable:hover {
   cursor: default;
+}
+/* Поле  поиска */
+.search,
+.search-hov {
+  font-family: Montserrat;
+  width: 242px;
+  height: 37px;
+  background: #ffffff;
+  border: 0.5px solid #2a4a8b;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 5px 25px;
+  color: #2a4a8b;
+  outline: none;
+}
+.search::-webkit-input-placeholder,
+.search-hov::-webkit-input-placeholder {
+  font-family: Montserrat;
+  color: #2a4a8b;
+}
+.search:hover,
+.search:active,
+.search:focus,
+.search-hov {
+  background: #e6f0f5;
+}
+/* Checkbox */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+/* Checkbox as a filter*/
+.container-filter {
+  display: block;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 30px;
+  padding-top: 6px;
+  cursor: pointer;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.container input,
+.container-filter input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 0.5px solid #ca0404;
+  border-radius: 2px;
+}
+.checkmark-filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  border: 0.5px solid #ca0404;
+  border-radius: 2px;
+}
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark,
+.container-filter:hover input ~ .checkmark-filter {
+  background-color: #e64040;
+}
+/* When the checkbox is checked, add a red background */
+.container input:checked ~ .checkmark,
+.container-filter input:checked ~ .checkmark-filter {
+  background-color: #ca0404;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark-filter:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.container-filter input:checked ~ .checkmark-filter:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.container-filter .checkmark-filter:after {
+  left: 10px;
+  top: 4px;
+  width: 15px;
+  height: 28px;
+  background-image: url("checkmark.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* Поле ввода */
+.enter {
+  display: flex;
+  flex-direction: column;
+}
+.enter_text {
+  font-family: Montserrat;
+  font-size: 12px;
+  letter-spacing: 0.135em;
+  color: #394367;
+}
+.enter_input {
+  width: 242px;
+  height: 37px;
+  font-family: Montserrat;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  background: #ffffff;
+  border: none;
+  border-bottom: 0.5px solid #2a4a8b;
+  box-sizing: border-box;
+  padding: 5px 5px;
+  color: #2a4a8b;
+  outline: none;
+}
+.enter_input::-webkit-input-placeholder {
+  font-family: Montserrat;
+  color: #96979f;
 }
