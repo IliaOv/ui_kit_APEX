@@ -73,7 +73,7 @@
 }
 body {
   background-color: #f7f8fc;
-  font-family: Montserrat;
+  font-family: Montserrat, monospace;
 }
 main,
 header {
@@ -101,151 +101,149 @@ header {
   padding: 3%;
 }
 /* Блок для 2 кнопкой (обычная и при наведении) */
-.block-hov {
+.block__hov {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100px;
 }
-.block-check {
-  min-height: 120px;
-}
 /* Стиль кода */
-pre {
-  font-size: 12px;
+.block__check {
+  min-height: 120px;
+  font-size: 13px;
   color: #394367;
-  min-width: 390px;
+  min-width: 420px;
 }
 /* сделать прозрачным бар наверху */
 .t-Header-branding {
   background-color: transparent;
 }
 /* Первый заголовок */
-.header_1 {
-  font-family: Montserrat;
+.header__first {
+  font-family: Montserrat, monospace;
   font-weight: 400;
   font-size: 32px;
   letter-spacing: 0.05em;
   color: #00213a;
 }
 /* Первый заголовок */
-.header_2,
+.header__second,
 .t-Region-title {
-  font-family: Montserrat;
+  font-family: Montserrat, monospace;
   font-weight: 400;
   font-size: 24px;
   color: #00213a;
 }
 /* Первый заголовок */
-.header_3,
+.header__third,
 .t-Region-body {
-  font-family: Montserrat;
+  font-family: Montserrat, monospace;
   font-weight: 400;
   font-size: 18px;
   color: #00213a;
 }
 /* Основной текст */
-.text_carry {
-  font-family: Montserrat;
+.txt__primary {
+  font-family: Montserrat, monospace;
   font-weight: 300;
   font-size: 12px;
   color: #394367;
 }
 /* Вспомогательный текст */
-.text_support {
-  font-family: Montserrat;
+.txt__secondary {
+  font-family: Montserrat, monospace;
   font-weight: 300;
   font-size: 12px;
   color: #96979f;
 }
 /* Кнопка 1 тип */
-.button_1,
-.button_1-hov {
+.btn__primary,
+.btn__primary-hov {
   width: 135px;
   height: 40px;
-  background-color: #ecf7fa !important;
-  border-radius: 6px !important;
+  background-color: #ecf7fa;
+  border-radius: 6px;
   border: none;
-  box-shadow: none !important;
-  font-family: Montserrat;
+  box-shadow: none;
+  font-family: Montserrat, monospace;
   font-weight: 500;
-  font-size: 14px !important;
-  color: #2a4a8b !important;
+  font-size: 14px;
+  color: #2a4a8b;
   cursor: pointer;
-  padding: 0 !important;
+  padding: 0;
 }
 /* Кнопка 1 тип, наведение */
-.button_1:hover,
-.button_1-hov {
-  color: #ecf7fa !important;
-  background: #2a4a8b !important;
-  transition: 0.2s !important;
+.btn__primary:hover,
+.btn__primary-hov {
+  color: #ecf7fa;
+  background: #2a4a8b;
+  transition: 0.2s;
 }
 /* Кнопка 2 тип */
-.button_2,
-.button_2-hov {
+.btn__secondary,
+.btn__secondary-hov {
   width: 135px;
   height: 40px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 6px;
   border: 0.5px solid #2a4a8b;
-  font-family: Montserrat;
+  font-family: Montserrat, monospace;
   font-weight: 500;
   font-size: 14px;
   color: #2a4a8b;
   cursor: pointer;
 }
 /* Кнопка 2 тип, наведение */
-.button_2:hover,
-.button_2-hov {
+.btn__secondary:hover,
+.btn__secondary-hov {
   color: #ecf7fa;
   background: #2a4a8b;
   transition: 0.2s;
 }
 /* Кнопка 3 тип (нежелательно)*/
-.button_сancel,
-.button_сancel-hov {
+.btn__cancel,
+.btn__cancel-hov {
   width: 135px;
   height: 40px;
   background: #d23737;
   border-radius: 6px;
   border: none;
-  font-family: Montserrat;
+  font-family: Montserrat, monospace;
   font-weight: 500;
   font-size: 14px;
-  color: #ffffff;
+  color: #fff;
   cursor: pointer;
 }
 /* Кнопка 3 тип, наведение*/
-.button_сancel:hover,
-.button_сancel-hov {
-  color: #ffffff;
+.btn__cancel:hover,
+.btn__cancel-hov {
+  color: #fff;
   background: #ca0404;
   transition: 0.2s;
 }
 /* Кнопка 4 тип, неактивна*/
-.button_disable {
+.btn__disable {
   width: 135px;
   height: 40px;
   background: #e6f0f5;
   border-radius: 6px;
   border: none;
-  font-family: Montserrat;
+  font-family: Montserrat, monospace;
   font-weight: 500;
   font-size: 14px;
   color: #96979f;
 }
 /* Кнопка 4 тип, неактивна, наведение*/
-.button_disable:hover {
+.btn__disable:hover {
   cursor: default;
 }
 /* Поле  поиска */
 .search,
 .search-hov {
-  font-family: Montserrat;
+  font-family: Montserrat, monospace;
   width: 242px;
   height: 37px;
-  background: #ffffff;
+  background: #fff;
   border: 0.5px solid #2a4a8b;
   box-sizing: border-box;
   border-radius: 5px;
@@ -255,7 +253,7 @@ pre {
 }
 .search::-webkit-input-placeholder,
 .search-hov::-webkit-input-placeholder {
-  font-family: Montserrat;
+  font-family: Montserrat, monospace;
   color: #2a4a8b;
 }
 .search:hover,
@@ -347,19 +345,19 @@ pre {
   display: flex;
   flex-direction: column;
 }
-.enter_text {
-  font-family: Montserrat;
+.enter__txt {
+  font-family: Montserrat, monospace;
   font-size: 12px;
   letter-spacing: 0.135em;
   color: #394367;
 }
-.enter_input {
+.enter__input {
   width: 242px;
   height: 37px;
-  font-family: Montserrat;
+  font-family: Montserrat, monospace;
   font-size: 16px;
   letter-spacing: 0.02em;
-  background: #ffffff;
+  background: #fff;
   border: none;
   border-bottom: 0.5px solid #2a4a8b;
   box-sizing: border-box;
@@ -367,7 +365,7 @@ pre {
   color: #2a4a8b;
   outline: none;
 }
-.enter_input::-webkit-input-placeholder {
-  font-family: Montserrat;
+.enter__input::-webkit-input-placeholder {
+  font-family: Montserrat, monospace;
   color: #96979f;
 }
