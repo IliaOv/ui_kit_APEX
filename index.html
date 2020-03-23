@@ -93,13 +93,13 @@
 
       <div class="block">
         <p class="block__hov">
-          <button class="btn__secondary">Редактировать</button>
-          <button class="btn__secondary-hov">Редактировать</button>
+          <button class="btn__primary">Редактировать</button>
+          <button class="btn__primary-hov">Редактировать</button>
         </p>
         <pre
           class="block__check"
           style="color:#FFA500;background:#ffffff;"
-        ><span style='color:#808030; '>.</span>btn <span style='color:#C17D00; '>{</span>
+        ><span style='color:#808030; '>.</span>btn__primary <span style='color:#C17D00; '>{</span>
   <span style='color:#34799E; font-weight:bold; '>width</span><span style='color:#808030; '>:</span> <span style='color:#B1B234; '>135</span><span style='color:#B1B234; '>px</span><span style='color:#C17D00; '>;</span>
   <span style='color:#34799E; font-weight:bold; '>height</span><span style='color:#808030; '>:</span> <span style='color:#B1B234; '>40</span><span style='color:#B1B234; '>px</span><span style='color:#C17D00; '>;</span>
   <span style='color:#34799E; font-weight:bold; '>background-color</span><span style='color:#808030; '>:</span> <span style='color:#B1B234; '>#</span><span style='color:#B1B234; '>ecf7fa</span><span style='color:#C17D00; '>;</span>
@@ -114,7 +114,7 @@
   <span style='color:#34799E; font-weight:bold; '>padding</span><span style='color:#808030; '>:</span> <span style='color:#B1B234; '>0</span><span style='color:#C17D00; '>;</span>
 <span style='color:#C17D00; '>}</span>
 
-<span style='color:#808030; '>.</span>btn<span style='color:#C17D00; '>:</span><span style='color:#C17D00; font-weight:bold; '>hover</span> <span style='color:#C17D00; '>{</span>
+<span style='color:#808030; '>.</span>btn__primary<span style='color:#C17D00; '>:</span><span style='color:#C17D00; font-weight:bold; '>hover</span> <span style='color:#C17D00; '>{</span>
   <span style='color:#34799E; font-weight:bold; '>color</span><span style='color:#808030; '>:</span> <span style='color:#B1B234; '>#</span><span style='color:#B1B234; '>ecf7fa</span><span style='color:#C17D00; '>;</span>
   <span style='color:#34799E; font-weight:bold; '>background</span><span style='color:#808030; '>:</span> <span style='color:#B1B234; '>#</span><span style='color:#B1B234; '>2a4a8b</span><span style='color:#C17D00; '>;</span>
   <span style='color:#34799E; font-weight:bold; '>transition</span><span style='color:#808030; '>:</span> <span style='color:#B1B234; '>0.</span><span style='color:#B1B234; '>2</span><span style='color:#B1B234; '>s</span><span style='color:#C17D00; '>;</span>
@@ -204,12 +204,14 @@
       </div>
 
       <div class="block">
-        <label>
-          <span class="block__hov">
+        <span class="block__hov">
+          <label>
             <input class="search" type="text" placeholder="Поиск" />
+          </label>
+          <label>
             <input class="search-hov" type="text" placeholder="Поиск" />
-          </span>
-        </label>
+          </label>
+        </span>
         <pre
           class="block__check"
           style="color:#FFA500;background:#ffffff;"
@@ -242,7 +244,7 @@
 
       <div class="block">
         <label class="enter">
-          <span class="enter__text">Год начала</span>
+          <span class="txt__secondary">Год начала</span>
           <input class="enter__input" type="text" placeholder="Введите год" />
         </label>
         <pre
@@ -251,13 +253,6 @@
         ><span style='color:#808030; '>.</span>enter <span style='color:#C17D00; '>{</span>
   <span style='color:#34799E; font-weight:bold; '>display</span><span style='color:#808030; '>:</span> flex<span style='color:#C17D00; '>;</span>
   <span style='color:#34799E; font-weight:bold; '>flex-direction</span><span style='color:#808030; '>:</span> column<span style='color:#C17D00; '>;</span>
-<span style='color:#C17D00; '>}</span>
-
-<span style='color:#808030; '>.</span>enter__txt <span style='color:#C17D00; '>{</span>
-  <span style='color:#34799E; font-weight:bold; '>font-family</span><span style='color:#808030; '>:</span> Montserrat<span style='color:#808030; '>,</span> <span style='color:#074726; '>monospace</span><span style='color:#C17D00; '>;</span>
-  <span style='color:#34799E; font-weight:bold; '>font-size</span><span style='color:#808030; '>:</span> <span style='color:#B1B234; '>12</span><span style='color:#B1B234; '>px</span><span style='color:#C17D00; '>;</span>
-  <span style='color:#34799E; font-weight:bold; '>letter-spacing</span><span style='color:#808030; '>:</span> <span style='color:#B1B234; '>0.135</span><span style='color:#B1B234; '>em</span><span style='color:#C17D00; '>;</span>
-  <span style='color:#34799E; font-weight:bold; '>color</span><span style='color:#808030; '>:</span> <span style='color:#B1B234; '>#</span><span style='color:#B1B234; '>394367</span><span style='color:#C17D00; '>;</span>
 <span style='color:#C17D00; '>}</span>
 
 <span style='color:#808030; '>.</span>enter__input <span style='color:#C17D00; '>{</span>
@@ -442,6 +437,103 @@
         <span class="color__txt">Фон</span>
         <div class="color color__background">
           #F7F8FC
+        </div>
+      </div>
+
+      <div class="block__col">
+        <span class="color__txt">Тусклый</span>
+        <div class="color color__pale">
+          #E6F0F5
+        </div>
+      </div>
+
+      <div class="block__col">
+        <span class="color__txt">Заголовок</span>
+        <div class="color color__header">
+          #00213A
+        </div>
+      </div>
+
+      <div class="block__col">
+        <span class="color__txt">Основной текст</span>
+        <div class="color color__txt__primary">
+          #394367
+        </div>
+      </div>
+
+      <div class="block__col">
+        <span class="color__txt">Второстепенный текст</span>
+        <div class="color color__txt__secondary">
+          #96979F
+        </div>
+      </div>
+
+      <div class="block__col">
+        <span class="color__txt">Белый текст</span>
+        <div class="color color__txt__white">
+          #fff
+        </div>
+      </div>
+
+      <div class="block__col">
+        <span class="color__txt">Отмена яркий</span>
+        <div class="color color__cancel__bright">
+          #CA0404
+        </div>
+      </div>
+      <div class="block__col">
+        <span class="color__txt">Отмена</span>
+        <div class="color color__cancel">
+          #D23737
+        </div>
+      </div>
+      <div class="block__col">
+        <span class="color__txt">Дополнительный цвет</span>
+        <div class="color color__add">
+          #CA0404
+        </div>
+      </div>
+
+      <div class="block__col">
+        <span class="color__txt">Цвет 1</span>
+        <div class="color color__chart_1">
+          #E64040
+        </div>
+      </div>
+      <div class="block__col">
+        <span class="color__txt">Цвет 2</span>
+        <div class="color color__chart_2">
+          #2A4A8B
+        </div>
+      </div>
+      <div class="block__col">
+        <span class="color__txt">Цвет 3</span>
+        <div class="color color__chart_3">
+          #C5C658
+        </div>
+      </div>
+      <div class="block__col">
+        <span class="color__txt">Цвет 4</span>
+        <div class="color color__chart_4">
+          #F4C20D
+        </div>
+      </div>
+      <div class="block__col">
+        <span class="color__txt">Цвет 5</span>
+        <div class="color color__chart_5">
+          #3B4255
+        </div>
+      </div>
+      <div class="block__col">
+        <span class="color__txt">Цвет 6</span>
+        <div class="color color__chart_6">
+          #6681C3
+        </div>
+      </div>
+      <div class="block__col">
+        <span class="color__txt">Цвет 7</span>
+        <div class="color color__chart_7">
+          #EBE8BF
         </div>
       </div>
     </footer>

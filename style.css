@@ -87,6 +87,13 @@ footer {
   border-radius: 15px;
   margin-bottom: 2%;
 }
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
 /* Выделить надпись ИБРАЭ РАН */
 .org {
   color: #d23737;
@@ -371,12 +378,6 @@ footer {
   font-family: Montserrat, monospace;
   color: #96979f;
 }
-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
 .block__col {
   display: flex;
   flex-direction: column;
@@ -406,4 +407,65 @@ footer {
 .color__background {
   background-color: #f7f8fc;
   color: #000;
+}
+.color__pale {
+  background-color: #e6f0f5;
+  color: #000;
+}
+.color__header {
+  background-color: #00213a;
+  color: #fff;
+}
+.color__txt__primary {
+  background-color: #394367;
+  color: #fff;
+}
+.color__txt__secondary {
+  background-color: #96979f;
+  color: #fff;
+}
+.color__txt__white {
+  background-color: #fff;
+  color: #000;
+  border: solid 1px grey;
+}
+.color__cancel__bright {
+  background-color: #ca0404;
+  color: #fff;
+}
+.color__cancel {
+  background-color: #d23737;
+  color: #fff;
+}
+.color__add {
+  background-color: #ca0404;
+  color: #fff;
+}
+.color__chart_1 {
+  background-color: #e64040;
+  color: #fff;
+}
+.color__chart_2 {
+  background-color: #2a4a8b;
+  color: #fff;
+}
+.color__chart_3 {
+  background-color: #c5c658;
+  color: #fff;
+}
+.color__chart_4 {
+  background-color: #f4c20d;
+  color: #fff;
+}
+.color__chart_5 {
+  background-color: #3b4255;
+  color: #fff;
+}
+.color__chart_6 {
+  background-color: #6681c3;
+  color: #fff;
+}
+.color__chart_7 {
+  background-color: #ebe8bf;
+  color: #3f3f3f;
 }
